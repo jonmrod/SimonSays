@@ -1,0 +1,30 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="css/style.css" />
+	<meta charset="utf-8">
+	<title>Simon Says</title>
+	<h1>Simon Says</h1>
+</head>
+<body>
+	<div id="wrapAround">
+			<ul>
+				<li id="red" class="circle"></li>
+				<li id="blue" class="circle"></li>
+				<li id="yellow" class="circle"></li>
+				<li id="green" class="circle"></li>
+			</ul>
+	</div>
+	<div class="options">
+		<h2>Options:</h2>
+		<input type="radio" name="mode" value="normal" checked>Sound On<br>
+		<input type="radio" name="mode" value="sound-only">Sound Off<br>
+	</div>
+
+</body>
+<div class="game-info">
+				<h2>Round: <span data-round="0">0</span></h2>
+				<button data-action="start" >Start</button>
+				<p data-action="lose">Sorry, you lost after round <span data-round="0"></span>!</p>
+			</div>
+</html>
