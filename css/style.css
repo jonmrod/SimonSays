@@ -1,0 +1,61 @@
+h1 
+{
+	text-align: center;
+}
+
+#wrapAround
+{
+	float: left;
+	padding-left: 40%;
+}
+
+.options
+{
+	float: right;
+	padding-right: 40%;
+}
+
+.circle
+{
+	width: 500px;
+	position: static;
+	opacity: 0.6;
+}
+
+
+#red, #blue, #yellow, #green {
+	height: 290px;
+	border-radius: 150px 150px 150px 150px;
+	position: absolute;
+	text-indent: 10000px;
+}
+
+#red {
+	background: red;
+	clip: rect(0px, 300px, 150px, 150px);
+	width: 296px;
+}
+
+#blue {
+	background: blue;
+	clip: rect(0px, 150px, 150px, 0px);
+	width: 300px;
+}
+
+#yellow {
+	background: yellow;
+	clip: rect(150px, 150px, 300px, 0px);
+	width: 300px;
+}
+
+#green {
+	background: darkgreen;
+	clip: rect(150px,300px, 300px, 150px);
+	width: 296px;
+}
+
+
+.circle:hover
+{	opacity: 1;
+	box-shadow: 2px 2px 1em black;
+}
