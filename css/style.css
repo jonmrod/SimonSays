@@ -1,61 +1,91 @@
-h1 
+
+body
 {
-	text-align: center;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:  "Helvetica Neue", "Helvetica", "Sans-Serif";
 }
 
-#wrapAround
+h1 {
+    text-align: center;
+}
+
+p[action="gameOver"] {
+    display: none;
+}
+
+#wrapAround {
+    padding-top: 5%;
+    width: 100px;
+    clear: both;
+    padding-left: 20%;
+}
+
+#rounds {
+    text-align: center;
+    display: none;
+    padding-right: 20%;
+    padding-top: 29%;
+}
+#newGame
 {
-	float: left;
-	padding-left: 40%;
+    position: relative;
+    top: -40px;
+    left: 38%;
 }
 
-.options
-{
-	float: right;
-	padding-right: 40%;
+.options {
+    float: right;
+    padding-right: 20%;
 }
 
-.circle
-{
-	width: 500px;
-	position: static;
-	opacity: 0.6;
+.circle {
+    position: static;
+    opacity: 0.4;
+}
+.circle.turnOn {
+    opacity: 1;
 }
 
-
-#red, #blue, #yellow, #green {
-	height: 290px;
-	border-radius: 150px 150px 150px 150px;
-	position: absolute;
-	text-indent: 10000px;
+.red,
+.blue,
+.yellow,
+.green {
+    height: 40%;
+    border-radius: 150px 150px 150px 150px;
+    position: absolute;
 }
 
-#red {
-	background: red;
-	clip: rect(0px, 300px, 150px, 150px);
-	width: 296px;
+.red {
+    background: red;
+    clip: rect(0px, 300px, 140px, 160px);
+    width: 300px;
 }
 
-#blue {
-	background: blue;
-	clip: rect(0px, 150px, 150px, 0px);
-	width: 300px;
+.blue {
+    background: blue;
+    clip: rect(0px, 140px, 140px, 0px);
+    width: 300px;
 }
 
-#yellow {
-	background: yellow;
-	clip: rect(150px, 150px, 300px, 0px);
-	width: 300px;
+.yellow {
+    background: yellow;
+    clip: rect(160px, 140px, 300px, 0px);
+    width: 300px;
 }
 
-#green {
-	background: darkgreen;
-	clip: rect(150px,300px, 300px, 150px);
-	width: 296px;
+.green {
+    background: darkgreen;
+    clip: rect(160px, 300px, 300px, 160px);
+    width: 300px;
 }
 
-
-.circle:hover
-{	opacity: 1;
-	box-shadow: 2px 2px 1em black;
+.circle.lit {
+    opacity: 1;
 }
+
+.circle:hover {
+    box-shadow: 2px 2px .9em black;
+}
+
