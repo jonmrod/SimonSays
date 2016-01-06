@@ -1,33 +1,54 @@
 <html>
 
 <head>
+    <!-- import frameworks and script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="utf-8">
+
     <title>Simon Says</title>
+
     <h1>Simon Says</h1>
 </head>
 
 <body>
-    <div id="rounds">
-        <h2>Round: <span round="0">0</span></h2>
-    </div>
+    <!-- simon says board -->
     <div id="wrapAround">
-        <p action="gameOver">Game over! you lost after round <span data-round="0"></span>!</p>
         <ul>
             <li class="circle red" data="1"></li>
             <li class="circle blue" data="2"></li>
-            <li class="circle yellow" data="3"></li>
+            <li class="circle orange" data="3"></li>
             <li class="circle green" data="4"></li>
         </ul>
     </div>
+
+    <button id="newGame">Start</button>
+
     <div class="options">
-        <button action="start">Start</button>
+        <h3>Options</h3>
+        <hr width="100%">
         <h3>
-        <input type="radio" name="mode" value="normal" checked>Sound On<br>
-        <input type="radio" name="mode" value="no-sound">Sound Off<br>
+        <input type="radio" name="sound" value="on" checked>Sound On<br>
+        <input type="radio" name="sound" value="off">Sound Off<br>
         </h3>
+        <hr width="100%">
     </div>
+
+    <!-- # of rounds -->
+    <div id="rounds">
+        <h3 class="turn"></h3>
+        <h2>Round <span round="0">0</span></h2>
+    </div>
+
+    <!-- if user loses -->
+    <div id="lost">
+    <h2>Game over! you lost after round <span round="0"></span>!</h2>
+    </div>
+    
 </body>
+
+<!-- sound variable -->
+<div audio="sound"></div>
 
 </html>
