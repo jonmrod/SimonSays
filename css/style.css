@@ -6,6 +6,16 @@ html
     margin-right: auto;
     font-family:  "Helvetica Neue", "Helvetica", "Sans-Serif";
 }
+button#newGame {
+    font-size: 20px;
+    border: 0;
+    background-color: #c4f1fe;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    top: -55px;
+    left: 36%;
+}
 
 h1 {
     text-align: center;
@@ -28,11 +38,11 @@ p[action="gameOver"] {
     padding-right: 20%;
     padding-top: 29%;
 }
-#newGame
-{
-    position: relative;
-    top: -40px;
-    left: 38%;
+#lost {
+    text-align: center;
+    display: none;
+    padding-right: 20%;
+    padding-top: 29%;
 }
 
 .options {
@@ -50,7 +60,7 @@ p[action="gameOver"] {
 
 .red,
 .blue,
-.yellow,
+.orange,
 .green {
     height: 40%;
     border-radius: 150px 150px 150px 150px;
@@ -69,8 +79,8 @@ p[action="gameOver"] {
     width: 300px;
 }
 
-.yellow {
-    background: yellow;
+.orange {
+    background: orange;
     clip: rect(160px, 140px, 300px, 0px);
     width: 300px;
 }
