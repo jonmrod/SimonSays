@@ -2,4 +2,5 @@
 Simon says game built with Javascript
 
 #Example
-![ScreenShot](https://gfycat.com/BowedOddAmericantoad)
+
+![Alt text](https://gfycat.com/BowedOddAmericantoad)
