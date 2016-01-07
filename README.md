@@ -3,4 +3,4 @@ Simon says game built with Javascript
 
 #Example
 
-![Alt text](https://gfycat.com/BowedOddAmericantoad)
+![Alt text](https://zippy.gfycat.com/BowedOddAmericantoad.gif)
